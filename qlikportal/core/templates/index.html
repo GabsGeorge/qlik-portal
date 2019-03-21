@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %} 
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Qlik Portal</title>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.in1.com.br/hubfs/icone.png">
+	<link rel="stylesheet" href="{% static 'css/tabs.css'%}" type="text/css">
+	<script src="{%static 'js/style.js' %}"></script>
+</head>
+
+<body>
+	<div class="">
+		<div class="">
+			<section class="content">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+
+							<a href="#"><img src="https://www.in1.com.br/hs-fs/hubfs/in/site_2017/logos-in1/logo-master-reseller-2-ano-consecutivo.png?width=891&amp;name=logo-master-reseller-2-ano-consecutivo.png" alt="logo IN" style="
+							width: 240px;
+							">	</a>
+
+							<div class="pull-right">
+								<div class="btn-group">
+									<button type="button" class="btn btn-success btn-filter" data-target="qliksense">Qlik Sense</button>
+									<button type="button" class="btn btn-warning btn-filter" data-target="qlikview">Qlik View</button>
+									<button type="button" class="btn btn-default btn-filter" data-target="all">Ambos</button>
+								</div>
+							</div>
+							<div class="table-container">
+								<table class="table table-filter">
+									<tbody>
+										<tr data-status="qliksense">
+											<td>
+												<iframe style="border: 0;" src="http://bi.in1.com.br/" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+											</td>
+										</tr>
+										<tr data-status="qlikview">
+											
+											<td>
+												<iframe style="border: 0;" src="http://qlikin.in1.com.br/" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+											</div>
+										</div>
+									</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="content-footer">
+					<p><center>
+						Copyright © 2018 By <a href="https://www.in1.com.br/">Inteligência de Negócios</a>
+					</center></p>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+</body>

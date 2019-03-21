@@ -11,7 +11,7 @@ urlpatterns = [
 
 	path('index/', views.IndexView.as_view(), name='index'),
 
-	path('tab/', views.TabView.as_view(), name='tab'),
+	path('tabs/', views.TabView.as_view(), name='tabs'),
 
 
 

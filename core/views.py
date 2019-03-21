@@ -7,5 +7,5 @@ class IndexView(TemplateView):
 	template_name = 'index.html'
 
 class TabView(TemplateView):
-	template_name = 'tab.html'
+	template_name = 'tabs.html'
     

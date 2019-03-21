@@ -1,7 +1,11 @@
 /*    --------------------------------------------------
     :: General
     -------------------------------------------------- */
-
+.pull-right {
+        position: relative!important;
+    top: 10px!important;
+}
+    
 .panel {
     margin-top: 15px !important;
 }

@@ -76,12 +76,16 @@ WSGI_APPLICATION = 'qlikportal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
+SECRET_KEY = '3izb^ryglj(bvrjb2_y1fZvcnbky#358_lh3@n#i8fkug4mmz!'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation

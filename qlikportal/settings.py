@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     #apps
     'core',
+    'accounts',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -129,10 +131,11 @@ USE_TZ = True
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL  = '/'
 
-#AUTH_USER_MODEL = 'accounts.Usuario'
+AUTH_USER_MODEL = 'accounts.Usuario'
 
 LOGIN_URL='login'
 LOGOUT_URL = 'logout'
+
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 

@@ -10,9 +10,10 @@ urlpatterns = [
 	path('', views.IndexView.as_view(), name='index'),
 
 	path('index/', views.IndexView.as_view(), name='index'),
-
-	path('tabs/', views.TabView.as_view(), name='tabs'),
-
+	
+	#Begin URLs accounts#
+	path('accounts/', include('accounts.urls')),
+	#End Url accounts#
 
 
 	]

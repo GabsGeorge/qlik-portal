@@ -1,77 +1,32 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %} 
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<title>Qlik Portal</title>
+{% block conteudo %}
 
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="https://www.in1.com.br/hubfs/icone.png">
-	<link rel="stylesheet" href="{% static 'css/tabs.css'%}" type="text/css">
-	<script src="{%static 'js/style.js' %}"></script>
-</head>
+<div class="">
+	<table class="table table-filter">
+		<tbody>
+			<tr data-status="qliksense">
+				<td>
+					<iframe style="border: 0;" src="http://bi.in1.com.br" width="100%" height="600px" frameborder="0" scrolling="yes" ></iframe>
+				</td>
+			</tr>
+			<tr data-status="qliksenseqmc" class="esconder">
+				<td>
+					<iframe style="border: 0;" src="http://bi.in1.com.br/qmc" width="100%" height="660px" frameborder="0" scrolling="yes" ></iframe>
+				</td>
+			</tr>
+			<tr data-status="qlikview" class="esconder">
+				<td>
+					<iframe style="border: 0;" src="http://qlikin.in1.com.br" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+				</td>
+			</tr>
+			<tr data-status="qlikviewqmc" class="esconder">
+				<td>
+					<iframe style="border: 0;" src="http://172.30.3.245:4780/QMC" width="100%" height="700px" frameborder="0" scrolling="yes"></iframe>
+				</td>
+			</tr>
+			<br>
+		</tbody>
+	</table>
 
-<body>
-	<div class="">
-		<div class="">
-			<section class="">
-				<div class="">
-					<div class="">
-						<div class="">
-							<a href="https://www.in1.com.br"><img src="https://www.in1.com.br/hs-fs/hubfs/in/site_2017/logos-in1/logo-master-reseller-2-ano-consecutivo.png?width=891&amp;name=logo-master-reseller-2-ano-consecutivo.png" alt="logo IN" style="
-							width: 200px;
-							position: relative;
-							left: 20px;
-							top: 10px;
-							">	</a>
-							<div class="pull-right">
-								<div class="btn-group">
-									<button type="button" class="btn btn-success btn-filter"  data-target="qliksense">Qlik Sense</button>
-									<button type="button" class="btn btn-success btn-filter"  data-target="qliksenseqmc">QMC Qlik Sense</button>
-									<button type="button" class="btn btn-warning btn-filter" data-target="qlikview">QlikView</button>
-									<button type="button" class="btn btn-warning btn-filter" data-target="qlikviewqmc">QMC QlikView</button>
-									
-								</div>
-							</div>
-							<div class="">
-								<table class="table table-filter">
-									<tbody>
-										<tr data-status="qliksense">
-											<td>
-												<iframe style="border: 0;" src="http://bi.in1.com.br" width="100%" height="600px" frameborder="0" scrolling="yes" ></iframe>
-											</td>
-										</tr>
-										<tr data-status="qliksenseqmc" class="esconder">
-											<td>
-												<iframe style="border: 0;" src="http://bi.in1.com.br/qmc" width="100%" height="660px" frameborder="0" scrolling="yes" ></iframe>
-											</td>
-										</tr>
-										<tr data-status="qlikview" class="esconder">
-											<td>
-												<iframe style="border: 0;" src="http://qlikin.in1.com.br" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
-											</td>
-										</tr>
-										<tr data-status="qlikviewqmc" class="esconder">
-											<td>
-												<iframe style="border: 0;" src="http://172.30.3.245:4780/QMC" width="100%" height="588px" frameborder="0" scrolling="yes"></iframe>
-											</td>
-										</tr>
-										<br>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-					<div class="content-footer">
-						<p><center>
-							Copyright © 2018 By <a href="https://www.in1.com.br/">Inteligência de Negócios</a>
-						</center></p>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</div>
-</body>
+	{% endblock conteudo %}

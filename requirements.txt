@@ -9,3 +9,4 @@ pytz==2018.9
 virtualenv==16.4.3
 whitenoise==3.2
 nodejs==0.1.1
+django-widget-tweaks==1.4.3

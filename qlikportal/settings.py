@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     #apps
     'core',
     'accounts',
-    
+    'widget_tweaks',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
